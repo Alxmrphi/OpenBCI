@@ -73,7 +73,7 @@ def main():
             #DataFilter.perform_bandpass(data[channel], sfreq, 26.0, 25, 2, FilterTypes.BUTTERWORTH.value, 0)
             #DataFilter.perform_bandstop(data[channel], sfreq, 50.0, 4.0, 2, FilterTypes.BUTTERWORTH.value, 0)
             #DataFilter.perform_wavelet_denoising(data[channel], 'coif3', 3)
-            #DataFilter.remove_environmental_noise(data[channel], sfreq, NoiseTypes.FIFTY.value)
+            #DataFilter.remove_environmental_noise(data[channel], sfreq, 50) # NoiseTypes.FIFTY.value)
 
         eeg_data = data[eeg_channels, :]
         eeg_data = eeg_data / 1000000  # BrainFlow returns uV, convert to V for MNE
