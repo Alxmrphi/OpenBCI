@@ -123,5 +123,7 @@ def main():
         events = data[marker_channel, :]
         np.save('beep_vs_cat.npy', events)
 
+        print('Saved and completed.')
+
 if __name__ == '__main__':
     main()
